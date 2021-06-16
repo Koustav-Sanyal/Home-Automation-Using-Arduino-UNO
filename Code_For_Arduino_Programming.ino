@@ -7,6 +7,8 @@ String inputs;
 #define relay6 7 //Connect relay6 to pin 4
 #define relay7 8 //Connect relay7 to pin 3
 #define relay8 9 //Connect relay8 to pin 2
+
+
 void setup()
 {
 Serial.begin(9600); //Set rate for communicating with phone
@@ -27,7 +29,9 @@ digitalWrite(relay6, LOW); //Swtich relay2 off
 digitalWrite(relay7, LOW); //Switch relay1 off
 digitalWrite(relay8, LOW); //Swtich relay2 off
 }
-void loop()
+
+
+void loop()  //Starting of loop
 {
 while(Serial.available()) //Check if there are available bytes to read
 {
